@@ -1,26 +1,82 @@
-题目：
+QUESTION NO: 1
+Which two statements are true regarding SQL*Plus?
+A. It has commands for performing database administration operations.
+B. It can be used in interactive but not batch mode for SQL commands.
+C. It has to be installed separately after the Oracle Database 11g installation.
+D. Operating system commands can be executed from the SQL*Plus command prompt.
+Answer: AD
 
-实现一个计算系统，计量单位之间的转换只需要考虑整数。
+QUESTION NO: 2
+Which two statements about the Process Monitor (PMON) process are true?
+A. PMON performs process recovery when a client process fails.
+B. During instance startup, PMON takes care of instance recovery.
+C. PMON performs listener registration.
+D. PMON restarts background and dispatcher processes when they fail.
+E. PMON resolves failures of distributed transactions.
+Answer: A, D
 
-需求一：实现一个长度（Length）计算系统
-用户既可以使用Mile为单位来记录一个长度，也可以使用Yard为单位来记录。
-用户可以对比两个不同单位表示的长度的相等关系
+QUESTION NO: 3
+Which logical storage relationship is correct?
+A. Tablespace< Segment < Extent < Oracle Datablock
+B. Segment < Extent < Oracle Datablock<Tablespace
+C. Tablespace< Extent < Segment < Oracle Datablock
+D. Data File <Tablespace< Segment < Extent < Oracle Datablock
+Answer: A
 
-1Mile = 1760Yard
+QUESTION NO: 4
+Your database instance is down because there was a user-initiated shutdown. Which option represents the
+actions performed, in the correct order, if you start up the instance?
+a - The control file is read.
+b - Memory is allocated.
+c - Background processes pre started.
+d -The initialization parameter file is read,
+e- Redo log files and data files are opened.
+A. b, c, a
+B. d, a, e
+C. a, e, d, b
+D. d, b, c, a, e
+E. c, b, d, a, e
 
-需求二：加入一个新的单位：Feet
-1Yard = 3Feet
-1Mile = 5280Feet
+QUESTION NO: 5
+Which three components are always part of System Global Area?
+A. Database Buffer Cache
+B. Undo Log Buffer
+C. Shared Pool
+D. Small Pool
+E. Java Pool
+F. Private SQL Area
+Answer: A, C, E
 
-需求三：再加入一个新的单位：Inch
-1Feet = 12Inch
-1Yard = 36Inch
-1Mile  = 63360Inch
 
-要求：
+QUESTION NO: 6
+Your database is down. You log in as the SYS user and issue this command:
+SQL> STARTUP
+What happens after the instance is started?
+A. Nothing else happens.
+B. The database is mounted but not opened.
+C. The database is mounted and finally opened.
+D. The database is opened and finally mounted.
+Answer: C
 
-1）按TDD方式实现
-2）代码满足Clean Code
-3)   代码中不能出现“一页纸规范”中列出的问题
+QUESTION NO: 7
+Your database is open and the listener is running. The DBA stops the listener by using the command:
+LSNRCTL> STOP
+What happens to the sessions that are currently connected to the database instance?
+A. They can perform only queries.
+B. They are not affected and continue to function normally.
+C. They are terminated and the active transactions are rolled back.
+D. They are not allowed to perform any operations till the listener is started.
+Answer: B
 
-*********************************************************************************************************************************************************************************************
+QUESTION NO: 8
+Your database instance is running. db01 is a net service name. You issue a connection request by using the
+command:
+SQL> CONNECT scott/tiger@db01
+Which component receives the request and establishes the appropriate connection?
+A. listener
+B. user process
+C. service name
+D. server process
+Answer: A
+
+
